@@ -290,7 +290,7 @@ textarea::-webkit-scrollbar {
 .ModalBackGround{
     margin-top: -30px;
     position: absolute;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.7);
     display: flex;
@@ -299,6 +299,7 @@ textarea::-webkit-scrollbar {
 }
 
 .ModalBody{
+    position: absolute;
     width: 90%;
     background-color: var(--White);
     border-radius: 8px;
@@ -339,6 +340,8 @@ textarea::-webkit-scrollbar {
     font-family: 'Rubik';
     font-size: 16px;
     font-weight: 400;
+
+    cursor: pointer;
 }
 
 .DeleteModal{
@@ -350,4 +353,6 @@ textarea::-webkit-scrollbar {
     font-family: 'Rubik';
     font-size: 16px;
     font-weight: 400;
+
+    cursor: pointer;
 }

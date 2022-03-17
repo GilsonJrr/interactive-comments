@@ -25,7 +25,7 @@ function Home() {
                         Date={iten.createdAt}
                         Comment={iten.content}
                         Score={iten.score}
-                        SetModal={()=>setModal(true)}
+                        Modal={modal}
                     />
                     {iten.replies.map((replies)=>{
                         return(
@@ -37,6 +37,7 @@ function Home() {
                                         Comment={replies.content}
                                         Score={replies.score}
                                         RepliedTo={replies.replyingTo}
+                                        Modal={()=>setModal(true)}
                                     />
                             </div>
                         )
@@ -47,7 +48,9 @@ function Home() {
         <ComentCard/>
 
         {modal &&
-            <Modal/>
+            <Modal
+                Modal={()=>setModal(false)}
+            />
         }
 
     </div>

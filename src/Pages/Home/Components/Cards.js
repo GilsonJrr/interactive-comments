@@ -64,7 +64,7 @@ function Cards(props) {
             {currentUser ?
             <div className='DelRepl'>
                 
-                <div className='Delete' onClick={props.SetModal}>
+                <div className='Delete' onClick={props.Modal}>
                     <img src={Delete} alt="Reply"/>
                     <p1>
                         Delete  
