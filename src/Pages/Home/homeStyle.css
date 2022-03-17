@@ -1,0 +1,353 @@
+/* Colors */
+
+:root{
+    --Moderateblue: hsl(238, 40%, 52%);
+    --SoftRed: hsl(358, 79%, 66%);
+    --Lightgrayishblue: hsl(239, 57%, 85%);
+    --Palered: hsl(357, 100%, 86%);
+    --Darkblue: hsl(212, 24%, 26%);
+    --GrayishBlue: hsl(211, 10%, 45%);
+    --Lightgray: hsl(223, 19%, 93%);
+    --Verylightgray: hsl(228, 33%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* Body style */
+
+.Body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Verylightgray);
+    min-height: 100vh;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.BodyCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.BodyCardsReplies{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 5%;
+    /* height: 250px; */
+    /* margin-bottom: 15px; */
+}
+
+.Line{
+    height: 100fr;
+    width: 2px;
+    background-color: var(--Lightgray);
+}
+
+.Replies{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+/* Main Card Style */
+
+.Card{
+    width: 90%;
+    background-color: var(--White);
+    border-radius: 8px;
+    /* padding: 20px; */
+    margin-bottom: 15px;
+}
+
+.Top{
+    /* width: 70%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: 15px;
+}
+
+.Top img{
+    height: 25px;
+}
+
+.Current{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Moderateblue);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.Current p3{
+    font-family: 'Rubik';
+    font-size: 10px;
+    color: var(--White);
+    font-weight: 400;
+    margin: 2px 6px 2px 6px;
+}
+
+.Top p1{
+    font-family: 'Rubik';
+    font-size: 13px;
+    color: var(--Darkblue);
+    font-weight: bold;
+    margin: 0px 10px 0px 15px;
+}
+
+.Top p2{
+    font-family: 'Rubik';
+    font-size: 13px;
+    color: var(--GrayishBlue);
+    font-weight: 500;
+}
+
+.CardBody{
+    margin: 15px;
+}
+
+.CardBody p1{
+    font-family: 'Rubik';
+    font-size: 14px;
+    color: var(--GrayishBlue);
+    font-weight: 400;
+}
+
+.CardBody p2{
+    font-family: 'Rubik';
+    font-size: 14px;
+    color: var(--Moderateblue);
+    font-weight: 400;
+}
+
+.Bottom{
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Score{
+    width: 20%;
+    background-color: var(--Verylightgray);
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Score img{
+    width: 7.5px;
+    height: auto;
+    cursor: pointer;
+}
+
+.ImgPlus{
+    /* width: 7.5px;
+    height: auto; */
+    background-image: url('../../Img/icon-plus.svg');
+    background-size: 7.5px;
+}
+
+.ImgPlus:hover{
+    /* background-color: blue;
+    color: black; */
+}
+
+.Score p1{
+    font-family: 'Rubik';
+    font-size: 13px;
+    color: var(--Moderateblue);
+    font-weight: 400;
+}
+
+.DelRepl{
+    display: flex;
+    width: 45%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.Delete{
+    /* width: 20%; */
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.Delete img{
+    width: 8px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.Delete p1{
+    font-family: 'Rubik';
+    font-size: 13px;
+    color: var(--SoftRed);
+    font-weight: 400;
+}
+
+.Reply{
+    /* width: 20%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.Reply img{
+    width: 10px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.Reply p1{
+    font-family: 'Rubik';
+    font-size: 13px;
+    color: var(--Moderateblue);
+    font-weight: 400;
+}
+
+/* Coment Card Style */
+
+.ComentCard{
+    width: 80%;
+    background-color: var(--White);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.ComentSection{
+    border-radius: 8px;
+    border: 2px solid var(--Lightgray);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ComentSection textarea{
+    width: 90%;
+    height: 70%;
+    border: none;
+    text-align: start;
+    outline: none;
+    font-family: 'Rubik';
+    resize: none;
+    color: var(--GrayishBlue);
+    font-weight: 400;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0em;
+}
+
+.BottomComent{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BottomComent img{
+    height: 25px;
+}
+
+.Send{
+    background-color: var(--Moderateblue);
+    border-radius: 8px;
+    padding: 10px 25px 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Send:hover{
+    background-color: var(--Lightgrayishblue);
+}
+
+.Send p1{
+    font-family: 'Rubik';
+    color: var(--White);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Modal Style */
+
+.ModalBackGround{
+    margin-top: -30px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ModalBody{
+    width: 90%;
+    background-color: var(--White);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ModalBody P1{
+    font-family: 'Rubik';
+    font-size: 18px;
+    color: var(--Darkblue);
+    font-weight: bold;
+    margin: 20px
+}
+
+.ModalBody p2{
+    font-family: 'Rubik';
+    font-size: 16px;
+    color: var(--GrayishBlue);
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0px 20px;
+}
+
+.CalDel{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.Cancel{
+    background-color: var(--GrayishBlue);
+    padding: 15px 20px;
+    border-radius: 10px;
+
+    color: var(--White);
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.DeleteModal{
+    background-color: var(--SoftRed);
+    padding: 15px 20px;
+    border-radius: 10px;
+
+    color: var(--White);
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 400;
+}
